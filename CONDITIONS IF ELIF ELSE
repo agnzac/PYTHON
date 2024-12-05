@@ -11,4 +11,37 @@ if k < n * m and ((k % n == 0) or (k % m == 0)):
 else:
     print('NO')
 
+----Statement 2 ----
+/*Given two integers A and B. Print all numbers from A to B inclusively, in ascending order, if A < B, or in descending order, if A ≥ B.*/
+
+a=int(input())
+b=int(input())
+if a>=b:
+    for i in range(a,b-1,-1):
+        print(i)
+else:
+    for i in range(a,b+1):
+        print(i)
+
+----Statement 3 ----
+/*10 numbers are given in the input. Read them and print their sum. Use as few variables as you can.*/
+
+s = 0
+for _ in range(10):
+    a=int(input())
+    s += a
+print (s)
+
+----Statement 4 ----
+/*N numbers are given in the input. Read them and print their sum.
+The first line of input contains the integer N, which is the number of integers to follow. Each of the next N lines contains one integer. Print the sum of these N integers.*/
+
+N=int(input())
+s = 0
+for _ in range(N):
+    a=int(input())
+    s += a
+print (s)
+
+
 
