@@ -1,7 +1,7 @@
 ----Statement 1 ----
-/* Chocolate bar has the form of a rectangle divided into n×m
+Chocolate bar has the form of a rectangle divided into n×m
 portions. Chocolate bar can be split into two rectangular parts by breaking it along a selected straight line on its pattern. Determine whether it is possible to split it so that one of the parts will have exactly k squares.
-The program reads three integers: n, m, and k. It should print YES or NO.*/
+The program reads three integers: n, m, and k. It should print YES or NO.
 
 n = int(input())
 m = int(input())
@@ -12,7 +12,7 @@ else:
     print('NO')
 
 ----Statement 2 ----
-/*Given two integers A and B. Print all numbers from A to B inclusively, in ascending order, if A < B, or in descending order, if A ≥ B.*/
+Given two integers A and B. Print all numbers from A to B inclusively, in ascending order, if A < B, or in descending order, if A ≥ B.
 
 a=int(input())
 b=int(input())
@@ -24,7 +24,7 @@ else:
         print(i)
 
 ----Statement 3 ----
-/*10 numbers are given in the input. Read them and print their sum. Use as few variables as you can.*/
+10 numbers are given in the input. Read them and print their sum. Use as few variables as you can.
 
 s = 0
 for _ in range(10):
@@ -33,8 +33,8 @@ for _ in range(10):
 print (s)
 
 ----Statement 4 ----
-/*N numbers are given in the input. Read them and print their sum.
-The first line of input contains the integer N, which is the number of integers to follow. Each of the next N lines contains one integer. Print the sum of these N integers.*/
+N numbers are given in the input. Read them and print their sum.
+The first line of input contains the integer N, which is the number of integers to follow. Each of the next N lines contains one integer. Print the sum of these N integers.
 
 N=int(input())
 s = 0
@@ -45,8 +45,8 @@ print (s)
 
 ----Statement 5 ----
 
-/*For the given integer N calculate the following sum:
-13+23+…+N3*/
+For the given integer N calculate the following sum:
+13+23+…+N3
 
 s = 0
 n = int(input())
@@ -56,9 +56,9 @@ print(s)
 
 ----Statement 6 ----
 
-/*In mathematics, the factorial of an integer n, denoted by n! is the following product:
+In mathematics, the factorial of an integer n, denoted by n! is the following product:
 n!=1×2×…×n
-For the given integer n calculate the value n! Don't use math module in this exercise.*/
+For the given integer n calculate the value n! Don't use math module in this exercise.
 
 num = 0
 fact = 1
