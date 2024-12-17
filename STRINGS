@@ -83,5 +83,14 @@ first_occurance=s.find('h')
 last_occurance=s.rfind('h')
 print(s.replace(s[first_occurance:last_occurance+1],''))
 
+----Statement 8 ----
+
+Given a string in which the letter h occurs at least two times, reverse the sequence of characters enclosed between the first and last appearances.
+--do sprawdzenia! nie dziala
+s=input()
+first_occurance=s.find('h')
+last_occurance=s.rfind('h')
+print(s.replace(s[first_occurance:last_occurance+1],s[first_occurance:last_occurance+1:-1]))
+
 
 
