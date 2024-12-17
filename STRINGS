@@ -62,6 +62,26 @@ Given a string that may or may not contain the letter of interest. Print the ind
 If the string contains the letter f only once, then print -1, and if the string does not contain the letter f, then print -2.
 
 
+s=input()
+firstPPosition=s.find('f')
+
+if s.count('f') ==0:
+    print('-2')
+elif s.count('f') == 1:
+    print('-1')
+else:
+    if s.count('f') > 1:
+        secodPPosition = s.find('f',firstPPosition+1)
+        print(secodPPosition)
+
+----Statement 7 ----
+
+Given a string in which the letter h occurs at least twice. Remove from that string the first and the last occurrence of the letter h, as well as all the characters between them.
+
+s=input()
+first_occurance=s.find('h')
+last_occurance=s.rfind('h')
+print(s.replace(s[first_occurance:last_occurance+1],''))
 
 
 
