@@ -86,11 +86,48 @@ print(s.replace(s[first_occurance:last_occurance+1],''))
 ----Statement 8 ----
 
 Given a string in which the letter h occurs at least two times, reverse the sequence of characters enclosed between the first and last appearances.
---do sprawdzenia! nie dziala
+
 s=input()
 first_occurance=s.find('h')
 last_occurance=s.rfind('h')
-print(s.replace(s[first_occurance:last_occurance+1],s[first_occurance:last_occurance+1:-1]))
+print(s.replace(s[first_occurance:last_occurance],s[last_occurance:first_occurance:-1]))
+
+----Statement 9 ----
+
+Given a string. Replace in this string all the numbers 1 by the word one.
+
+s=input()
+print(s.replace('1','one'))
+
+----Statement 10 ----
+
+Given a string. Remove from this string all the characters @.
+
+s=input()
+print(s.replace('@',''))
+
+----Statement 11 ----
+
+Given a string. Replace every occurrence of the letter h by the letter H, except for the first and the last ones.
+
+s=input()
+first_letter=s.find('h')
+last_letter=s.rfind('h')
+print(s[:first_letter]+s[first_letter]+s[first_letter+1:last_letter].replace('h','H')+s[last_letter:])
+
+
+----Statement 12 ----
+
+Given a string. Delete from it all the characters whose indices are divisible by 3.
+
+string = input()
+index = 0
+result = ''
+for letter in string:
+    if index % 3 != 0:
+        result += string[index]
+    index +=1
+print(result)
 
 
 
