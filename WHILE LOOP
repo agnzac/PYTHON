@@ -12,3 +12,24 @@ while i**2<=n:
 ----Statement 2 ----
 
 Given an integer not less than 2. Print its smallest integer divisor greater than 1.
+
+n=int(input())
+i=2
+
+if n==2:
+    print (n)
+elif n==3:
+    print (n)
+elif n>3 and n%i!=0:
+    while n%i!=0:
+        i+=1
+        if i==n:
+            print(i)
+        else:
+            while n%i==0:
+                print (i)
+                break
+else:
+    while n%i==0:
+        print (i)
+        break
