@@ -135,4 +135,21 @@ A sequence consists of integer numbers and ends with the number 0.
 Determine the index of the largest element of the sequence. 
 If the highest element is not unique, print the index of the first of them.
 
+maxNumber = 0
+index = 0
+totalNumbers = 0
+isZero = False
+
+while isZero == False:
+    totalNumbers +=1
+    number = int(input())
+    if number == 0:
+        isZero = True
+    else:
+        if number > maxNumber: 
+            maxNumber = number
+            index = totalNumbers
+
+print(index)
+
 
