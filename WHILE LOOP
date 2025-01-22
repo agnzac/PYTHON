@@ -74,3 +74,65 @@ print (i)
 Given a sequence of non-negative integers, where each number is written in a separate line. Determine the length of the sequence, where the sequence ends when the integer is equal to 0. 
 Print the length of the sequence (not counting the integer 0). 
 The numbers following the number 0 should be omitted.
+
+x=int(input())
+i=1
+
+while x!=0:
+    x=int(input())
+    i+=1
+print (i-1)
+
+----Statement 6 ----
+
+Determine the sum of all elements in the sequence, ending with the number 0.
+
+x=int(input())
+i=x
+
+while x!=0:
+    x=int(input())
+    i+=x
+print (i)
+
+----Statement 7 ----
+
+Determine the average of all elements of the sequence ending with the number 0.
+
+x=int(input())
+i=x
+y=0
+
+while x!=0:
+    x=int(input())
+    i+=x
+    y+=1
+    average=i/y
+print (average)
+
+----Statement 8 ----
+
+A sequence consists of integer numbers and ends with the number 0. Determine the largest element of the sequence.
+
+
+maxNumber = 0
+
+isZero = False
+
+while isZero == False:
+    number = int(input())
+    if number == 0:
+        isZero = True
+    else:
+        if number > maxNumber : 
+            maxNumber = number
+
+print(maxNumber)
+
+----Statement 9 ----
+
+A sequence consists of integer numbers and ends with the number 0. 
+Determine the index of the largest element of the sequence. 
+If the highest element is not unique, print the index of the first of them.
+
+
