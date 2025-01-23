@@ -155,6 +155,8 @@ print(index)
 
 ----Statement 10 ----
 
+Determine the number of even elements in the sequence ending with the number 0.
+
 n=int(input())
 i=0
 
@@ -166,5 +168,35 @@ while n!=0:
         i
         n=int(input())
 print (i)
+
+----Statement 11 ----
+
+A sequence consists of integer numbers and ends with the number 0. Determine how many elements of this sequence are greater than their neighbours above.
+
+n=int(input())
+i = 0
+
+while n!=0:
+    n_next=int(input())
+    
+    if n_next>n:
+        i+=1
+        n=n_next
+    else:
+        i
+        n=n_next
+print (i)
+
+----Statement 12 ----
+
+The sequence consists of distinct positive integer numbers and ends with the number 0. 
+Determine the value of the second largest element in this sequence. 
+It is guaranteed that the sequence has at least two elements.
+
+
+
+
+
+
 
 
