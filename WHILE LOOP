@@ -211,7 +211,21 @@ print(second_max)
 A sequence consists of integer numbers and ends with the number 0. 
 Determine how many elements of this sequence are equal to its largest element.
 
-A sequence consists of integer numbers and ends with the number 0. Determine how many elements of this sequence are equal to its largest element.
+maxNumber = 0
+isCero = False
+count = 0
+
+while isCero == False:
+    number = int(input())
+    if number == 0:
+        isCero = True
+    else:
+        if number > maxNumber : 
+            maxNumber = number
+            count = 1
+        elif number == maxNumber: count+=1
+            
+print(count)
 
 
 
