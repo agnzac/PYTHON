@@ -261,6 +261,25 @@ else:
     else:
         print(-1)
 
+----Statement 16 ----
+
+Given a sequence of integer numbers ending with the number 0. Determine the length of the widest fragment where all the elements are equal to each other.
+
+prev = -1
+curr_rep_len = 0
+max_rep_len = 0
+element = int(input())
+while element != 0:
+    if prev == element:
+        curr_rep_len += 1
+    else:
+        prev = element
+        max_rep_len = max(max_rep_len, curr_rep_len)
+        curr_rep_len = 1
+    element = int(input())
+max_rep_len = max(max_rep_len, curr_rep_len)
+print(max_rep_len)
+
 
 
 
