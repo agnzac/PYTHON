@@ -30,3 +30,39 @@ for i in range(1, len(a)):
         break
     else:
         print ("")
+
+----Statement 4 ----
+
+Given a list of numbers, determine and print the quantity of elements that are greater than both of their neighbors.
+The first and the last items of the list shouldn't be considered because they don't have two neighbors.
+
+a = [int(s) for s in input().split()]
+count=0
+for i in range(1, len(a)-1):
+    if a[i] > a[i-1] and a[i]>a[i+1]:
+        count+=1
+print(count)
+
+----Statement 5 ----
+
+Given a list of numbers. Determine the element in the list with the largest value. Print the value of the largest element and then the index number. 
+If the highest element is not unique, print the index of the first instance.
+
+a = [int(s) for s in input().split()]
+greatest_item=0
+gratest_index=0
+list_of_indices=[]
+for i in range(len(a)):
+    if a[i] > a[i-1]:
+        greatest_item=max(a)
+        gratest_index=a.index(max(a))
+    elif a[i] == a[i-1]:
+        greatest_item=a[i]
+        list_of_indices.append(i)
+        gratest_index=min(list_of_indices)
+print(greatest_item,gratest_index)
+
+----Statement 6 ----
+
+Given a list of numbers with all of its elements sorted in ascending order, determine and print the quantity of distinct elements in it.
+
